@@ -1,0 +1,15 @@
+print("Menciona un Año")
+iAnnio = int(input())
+iBisiesto = iAnnio % 4
+iBisiesto2 = iAnnio % 100
+iBisiesto3 = iAnnio % 400
+if iBisiesto == 0:
+    if iBisiesto2 == 0:
+        if iBisiesto3 == 0:
+            print("Es Año Bisiesto")
+        else:
+            print("No Es Año Bisiesto")
+    else:
+        print("Es Año Bisiesto")
+else:
+    print("No Es Año Bisiesto")
