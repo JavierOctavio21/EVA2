@@ -1,0 +1,11 @@
+print("¿Cual es tu Edad?")
+iEdad = int(input())
+while iEdad > 90:
+    print("No te pases, Di tu Edad Real")
+    iEdad = int(input())
+print("¿Cuentas con INE?")
+bINE = input()
+if iEdad >= 18 and bINE == "true":
+    print("Puedes Entrar")
+else:
+    print("No Puedes Entrar")
