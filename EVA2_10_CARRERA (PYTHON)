@@ -1,0 +1,16 @@
+print("Materias")
+bMaterias = input()
+if bMaterias == "true":
+    print("Servicio")
+    bServicio = input()
+    if bServicio == "true":
+        print("Residencias")
+        bResidencias = input()
+        if bResidencias == "true":
+            print("Te puedes Titular")
+        else:
+            print("No te puedes Titular")
+    else:
+        print("No te puedes Titular")
+else:
+    print("No te puedes Titular")
