@@ -1,0 +1,6 @@
+print("¿Cuentas con INE?")
+bINE = input()
+if bINE == "true":
+    print("Si Tienes INE")
+else:
+    print("No Tienes INE")
