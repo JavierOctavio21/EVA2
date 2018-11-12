@@ -1,0 +1,34 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("¿Cual es tu Edad?");
+        int iEdad;
+        
+        iEdad = input.nextInt();
+        while (iEdad > 90) {
+            System.out.println("No te pases, Di tu Edad Real");
+            iEdad = input.nextInt();
+        }
+        System.out.println("¿Cuentas con INE?");
+        boolean bINE;
+        
+        bINE = input.nextBoolean();
+        if (iEdad >= 18) {
+            if (bINE == true) {
+                System.out.println("Puedes Entrar");
+            } else {
+                System.out.println("La INE es Necesaria, No Puedes Entrar");
+            }
+        } else {
+            System.out.println("Eres Menor, No Puedes Entrar");
+        }
+    }
+}
