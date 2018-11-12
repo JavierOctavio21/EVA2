@@ -1,0 +1,67 @@
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+    cout << "Numero del Mes del Año" << endl;
+    int iMes;
+    
+    cin >> iMes;
+    while (iMes > 12) {
+        cout << "El Mes no Existe, Escriba Otro" << endl;
+        cin >> iMes;
+    }
+    while (iMes < 1) {
+        cout << "El Mes no Existe, Escriba Otro" << endl;
+        cin >> iMes;
+    }
+    if (iMes == 1) {
+        cout << "Es ENERO" << endl;
+    } else {
+        if (iMes == 2) {
+            cout << "Es FEBRERO" << endl;
+        } else {
+            if (iMes == 3) {
+                cout << "Es MARZO" << endl;
+            } else {
+                if (iMes == 4) {
+                    cout << "Es ABRIL" << endl;
+                } else {
+                    if (iMes == 5) {
+                        cout << "Es MAYO" << endl;
+                    } else {
+                        if (iMes == 6) {
+                            cout << "Es JUNIO" << endl;
+                        } else {
+                            if (iMes == 7) {
+                                cout << "Es JULIO" << endl;
+                            } else {
+                                if (iMes == 8) {
+                                    cout << "Es AGOSTO" << endl;
+                                } else {
+                                    if (iMes == 9) {
+                                        cout << "Es SEPTIEMBRE" << endl;
+                                    } else {
+                                        if (iMes == 10) {
+                                            cout << "Es OCTUBRE" << endl;
+                                        } else {
+                                            if (iMes == 11) {
+                                                cout << "Es NOVIEMBRE" << endl;
+                                            } else {
+                                                if (iMes == 12) {
+                                                    cout << "Es DICIEMBRE" << endl;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
