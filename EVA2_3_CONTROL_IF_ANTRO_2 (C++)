@@ -1,0 +1,17 @@
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+    cout << "¿Cuentas con INE?" << endl;
+    string bINE;
+    
+    cin >> bINE;
+    if (bINE == "true") {
+        cout << "Si Tienes INE" << endl;
+    } else {
+        cout << "No Tienes INE" << endl;
+    }
+    return 0;
+}
