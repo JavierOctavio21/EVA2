@@ -1,0 +1,37 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("Menciona un Año");
+        int iAnnio;
+        iAnnio = input.nextInt();
+        int iBisiesto;
+        iBisiesto = iAnnio % 4;
+        int iBisiesto2;
+        iBisiesto2 = iAnnio % 100;
+        int iBisiesto3;
+        iBisiesto3 = iAnnio % 400;
+        
+        if (iBisiesto == 0) {
+            if (iBisiesto2 == 0) {
+                if (iBisiesto3 == 0) {
+                    System.out.println("Es Año Bisiesto");
+                } else {
+                    System.out.println("No Es Año Bisiesto");
+                }
+            } else {
+                System.out.println("Es Año Bisiesto");
+            }
+        } else {
+            System.out.println("No Es Año Bisiesto");
+        }
+    }
+}
