@@ -1,0 +1,29 @@
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+    cout << "¿Cual es tu Edad?" << endl;
+    int iEdad;
+    
+    cin >> iEdad;
+    while (iEdad > 90) {
+        cout << "No te pases, Di tu Edad Real" << endl;
+        cin >> iEdad;
+    }
+    cout << "¿Cuentas con INE?" << endl;
+    string bINE;
+    
+    cin >> bINE;
+    if (iEdad >= 18) {
+        if (bINE == "true") {
+            cout << "Puedes Entrar" << endl;
+        } else {
+            cout << "La INE es Necesaria, No Puedes Entrar" << endl;
+        }
+    } else {
+        cout << "Eres Menor, No Puedes Entrar" << endl;
+    }
+    return 0;
+}
