@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Materias" << endl;
+    string bMaterias;
+    
+    cin >> bMaterias;
+    if (bMaterias == "true") {
+        cout << "Servicio" << endl;
+        string bServicio;
+        
+        cin >> bServicio;
+        if (bServicio == "true") {
+            cout << "Residencias" << endl;
+            string bResidencias;
+            
+            cin >> bResidencias;
+            if (bResidencias == "true") {
+                cout << "Te puedes Titular" << endl;
+            } else {
+                cout << "No te puedes Titular" << endl;
+            }
+        } else {
+            cout << "No te puedes Titular" << endl;
+        }
+    } else {
+        cout << "No te puedes Titular" << endl;
+    }
+    return 0;
+}
