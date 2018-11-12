@@ -1,0 +1,33 @@
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+    cout << "¿Cual es tu Calificación?" << endl;
+    int iCalifa;
+    
+    cin >> iCalifa;
+    while (iCalifa > 100) {
+        cout << "Esa calificación esta fuera de Rango" << endl;
+        cin >> iCalifa;
+    }
+    if (iCalifa == 100) {
+        cout << "Sacaste A, Felicidades" << endl;
+    } else {
+        if (iCalifa == 90) {
+            cout << "Sacaste B, Pasaste" << endl;
+        } else {
+            if (iCalifa == 80) {
+                cout << "Sacaste C, Pasaste" << endl;
+            } else {
+                if (iCalifa == 70) {
+                    cout << "Sacaste D, Pansaste" << endl;
+                } else {
+                    cout << "Sacaste F, Reprobaste" << endl;
+                }
+            }
+        }
+    }
+    return 0;
+}
