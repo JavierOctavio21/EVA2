@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int iSuma, iTotal, i;
+    
+    iTotal = 0;
+    for (i = 1; i <= 5; i++) {
+        cout << "Ingrese la Edad " << i << endl;
+        cin >> iSuma;
+        iTotal = iTotal + iSuma;
+    }
+    double rMedia;
+    
+    rMedia = (double) iTotal / 5;
+    cout << "La suma es " << iTotal << endl;
+    cout << "La media es " << rMedia << endl;
+    return 0;
+}
