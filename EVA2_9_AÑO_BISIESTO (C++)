@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Menciona un Año" << endl;
+    int iAnnio;
+    
+    cin >> iAnnio;
+    int iBisiesto;
+    
+    iBisiesto = iAnnio % 4;
+    int iBisiesto2;
+    
+    iBisiesto2 = iAnnio % 100;
+    int iBisiesto3;
+    
+    iBisiesto3 = iAnnio % 400;
+    if (iBisiesto == 0) {
+        if (iBisiesto2 == 0) {
+            if (iBisiesto3 == 0) {
+                cout << "Es Año Bisiesto" << endl;
+            } else {
+                cout << "No Es Año Bisiesto" << endl;
+            }
+        } else {
+            cout << "Es Año Bisiesto" << endl;
+        }
+    } else {
+        cout << "No Es Año Bisiesto" << endl;
+    }
+    return 0;
+}
