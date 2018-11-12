@@ -1,0 +1,18 @@
+print("¿Cual es tu Calificación?")
+iCalifa = int(input())
+while iCalifa > 100:
+    print("Esa calificación esta fuera de Rango")
+    iCalifa = int(input())
+if iCalifa == 100:
+    print("Sacaste A, Felicidades")
+else:
+    if iCalifa == 90:
+        print("Sacaste B, Pasaste")
+    else:
+        if iCalifa == 80:
+            print("Sacaste C, Pasaste")
+        else:
+            if iCalifa == 70:
+                print("Sacaste D, Pansaste")
+            else:
+                print("Sacaste F, Reprobaste")
